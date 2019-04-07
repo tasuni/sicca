@@ -35,3 +35,6 @@ class Predictor:
         else:
             res = 'Tails'
         return res
+
+p = Predictor()
+p.predict('test/2.JPG')
