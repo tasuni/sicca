@@ -11,6 +11,7 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
+
     <body>
 
            <header>
@@ -23,23 +24,16 @@
 
                     <div class="col-sm-6">
                             <div class="hi">
-                <h1>Hello there..</h1>
-                <p>feel free to criticize lole</p>
-                <p>my dumb ass could only do so much xD</p>
-                <p>Also, imd - this shit is annoying</p>
-                <div class="inp">
-                        <form method = "post" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit">Upload</button> </form>
-                    </div>
+                <h1>Here's the image</h1>
             </div>
 
         </div>
 
             <div class="col-sm-6">
                     <div class="hie">
-                    <p>iMaGe pReViEw hERe .-. </p>
+                        <div class="col-md-4">
+                            <img src="{{ coin_image.coin_img.url }}" class="rounded mx-auto d-block" style="width: 350px; height: 350px; float: left;" />
+                        </div>
             </div>
 
         </div>
